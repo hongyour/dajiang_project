@@ -5,7 +5,10 @@ require.config({
 		// "move":"move",
 		"jquery":"jquery-1.10.1.min",
 		"jquery-cookie":"jquery-cookie",
-		"parabola":"parabola"
+		"parabola":"parabola",
+		"select1":"select_pre",
+		"select2":"select2",
+		// "select3":"select3"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],

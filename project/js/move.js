@@ -1,17 +1,15 @@
 define(["jquery"]function($){
-	function move(){
+	function move(node1,node2,node3,node4){
 		$(function(){
-			// $("#se-last").hover(function(){
-			// 	$("#sele-last").stop().animate({
-			// 		background-color:"red"
-			// 	},1000)
-			// },function(){
-			// 	$("#sele-last").stop().animate({
-			// 		background-color:"blue"
-			// 	},1000)
-			// })
-			$("#se-last").on("mouseenter",function(){
-				$("#sele-last").css("backgroundColor","red");
+			$(node1).hover(function(){
+				$(node2).stop().fadeIn(300,function(){
+					$(node3).css("opacity","1");
+					$(node4).css("border-bottom","1px solid #333");
+				});
+			},function(){
+				$(node2).stop().fadeOut(300);
+				$(node4).css("border-bottom","0");
+				
 			})
 		})
 	}
@@ -19,3 +17,16 @@ define(["jquery"]function($){
 		move:move
 	}
 })
+
+/*
+			$("#se-one").hover(function(){
+				$(".blind").stop().fadeIn(300,function(){
+					$("#sele-one").css("opacity","1");
+					$(".se-one").css("border-bottom","1px solid #333");
+				});
+			},function(){
+				// $(".blind").stop().fadeOut(300);
+				$(".se-one").css("border-bottom","0");
+				
+			})
+ */

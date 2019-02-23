@@ -99,7 +99,7 @@ header #top-header #shopping a:last-child {
 
 #select-Box #select #list ul li {
   float: left;
-  /*text-align: center;*/ }
+  margin-top: -2px; }
 
 #select-Box #select #list ul li a {
   display: block;
@@ -119,8 +119,7 @@ header #top-header #shopping a:last-child {
   margin-right: 0; }
 
 #select-Box #select #search {
-  float: right;
-  /*padding:20px 0 0;*/ }
+  float: right; }
 
 #select-Box #select #search input {
   height: 48px;
@@ -139,36 +138,61 @@ header #top-header #shopping a:last-child {
   position: relative;
   height: 63px; }
   #select-Box #select #list #se-one {
-    float: left; }
-    #select-Box #select #list #se-one #sele-one {
-      width: 1349px;
-      float: left;
-      background-color: #fff;
-      position: absolute;
-      top: 65px;
-      left: -161px;
-      float: left;
-      padding-left: 130px;
+    float: left;
+    background-color: #fff;
+    /*.blind1{
+			background-color: orange;
+		}*/
+    /*#sele-one-r2{
+			@extend #sele-one-r;
+			@extend #sele-one-r1;
+			@include se(absolute,240px);
+			left:400px;
+			width: 40%;
+			margin-left: 80px;
+			div{
+				dl{
+					width: 50%;
+				}
+			}
+			
+		}*/ }
+    #select-Box #select #list #se-one .se-fir {
+      margin-right: 36px; }
+    #select-Box #select #list #se-one .blind {
       display: none; }
-      #select-Box #select #list #se-one #sele-one a:hover {
-        border-bottom: 1px solid #333; }
-      #select-Box #select #list #se-one #sele-one ul li {
-        text-align: left;
-        float: none;
-        height: 44px; }
-        #select-Box #select #list #se-one #sele-one ul li a {
-          display: inline-block;
-          width: 200px;
-          float: left;
-          margin-top: -4px; }
-          #select-Box #select #list #se-one #sele-one ul li a span {
+      #select-Box #select #list #se-one .blind #sele-one {
+        float: left;
+        background-color: #fff;
+        position: absolute;
+        top: 65px;
+        left: -161px;
+        padding-left: 130px;
+        width: 1349px; }
+        #select-Box #select #list #se-one .blind #sele-one ul li {
+          text-align: left;
+          float: none;
+          height: 44px; }
+          #select-Box #select #list #se-one .blind #sele-one ul li a {
             display: inline-block;
-            float: right; }
-          #select-Box #select #list #se-one #sele-one ul li a:hover {
-            color: #1897f2;
-            cursor: pointer; }
-    #select-Box #select #list #se-one #sele-one-r {
-      /*float: left;*/
+            width: 200px;
+            float: left;
+            margin-top: -4px;
+            color: #6c7073; }
+            #select-Box #select #list #se-one .blind #sele-one ul li a span {
+              display: inline-block;
+              float: right; }
+            #select-Box #select #list #se-one .blind #sele-one ul li a:hover {
+              color: #1897f2;
+              cursor: pointer; }
+      #select-Box #select #list #se-one .blind .se-right1 {
+        background-color: #fff; }
+        #select-Box #select #list #se-one .blind .se-right1 #sele-one-r, #select-Box #select #list #se-one .blind .se-right1 #sele-one-b, #select-Box #select #list #se-one .blind .se-right1 #sele-one-r1 {
+          background-color: orange; }
+      #select-Box #select #list #se-one .blind .other {
+        display: flex;
+        flex-direction: column; }
+    #select-Box #select #list #se-one #sele-one-r, #select-Box #select #list #se-one #sele-one-b, #select-Box #select #list #se-one #sele-one-r1 {
       z-index: 3;
       position: absolute;
       top: 64px;
@@ -177,16 +201,23 @@ header #top-header #shopping a:last-child {
       float: right;
       background-color: #fff;
       width: 800px;
-      display: none; }
-      #select-Box #select #list #se-one #sele-one-r h2 {
+      /*display:none;*/
+      padding-bottom: 30px; }
+      #select-Box #select #list #se-one #sele-one-r h2, #select-Box #select #list #se-one #sele-one-b h2, #select-Box #select #list #se-one #sele-one-r1 h2 {
         color: #333;
         font-size: 16px;
         font-weight: 400;
         padding-top: 20px; }
-      #select-Box #select #list #se-one #sele-one-r div {
+        #select-Box #select #list #se-one #sele-one-r h2 a, #select-Box #select #list #se-one #sele-one-b h2 a, #select-Box #select #list #se-one #sele-one-r1 h2 a {
+          color: #1897f2;
+          font-size: 13px;
+          display: inline-block;
+          padding: 0 20px; }
+      #select-Box #select #list #se-one #sele-one-r div, #select-Box #select #list #se-one #sele-one-b div, #select-Box #select #list #se-one #sele-one-r1 div {
         display: flex;
-        justify-content: space-between; }
-        #select-Box #select #list #se-one #sele-one-r div dl {
+        justify-content: space-between;
+        padding-top: 20px; }
+        #select-Box #select #list #se-one #sele-one-r div dl, #select-Box #select #list #se-one #sele-one-b div dl, #select-Box #select #list #se-one #sele-one-r1 div dl {
           width: 30%;
           float: left;
           display: flex;
@@ -194,8 +225,27 @@ header #top-header #shopping a:last-child {
           align-items: center;
           justify-content: center;
           color: #333;
-          font-size: 14px;
-          padding: 0 20px; }
+          padding: 0 20px;
+          font-size: 12px; }
+          #select-Box #select #list #se-one #sele-one-r div dl dd, #select-Box #select #list #se-one #sele-one-b div dl dd, #select-Box #select #list #se-one #sele-one-r1 div dl dd {
+            text-align: center; }
+    #select-Box #select #list #se-one .se-right {
+      /*position: absolute;*/ }
+    #select-Box #select #list #se-one #sele-one-b {
+      position: absolute;
+      top: 240px;
+      /*display:flex;*/
+      justify-content: center; }
+    #select-Box #select #list #se-one #sele-one-r1 {
+      position: absolute;
+      top: 480px;
+      left: 400px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      background-color: orange; }
+      #select-Box #select #list #se-one #sele-one-r1 h2 {
+        width: 100%; }
   #select-Box #select #list #sele-last {
     position: absolute;
     right: -26px;
@@ -216,8 +266,9 @@ header #top-header #shopping a:last-child {
           color: #333;
           width: 98px;
           display: block;
-          /*height: 44px;*/
-          line-height: 44px; }
+          height: 44px;
+          line-height: 44px;
+          padding: 0; }
           #select-Box #select #list #sele-last .add li a:hover {
             color: #1897f2; }
 
