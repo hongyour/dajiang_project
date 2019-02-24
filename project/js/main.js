@@ -8,7 +8,7 @@ require.config({
 		"parabola":"parabola",
 		"select1":"select_pre",
 		"select2":"select2",
-		// "select3":"select3"
+		"tab":"tab"
 	},
 	shim:{
 		"jquery-cookie":["jquery"],

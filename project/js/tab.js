@@ -1,5 +1,5 @@
 define(["jquery"],function($){
-	function select2(){
+	function tab(){
 		$(function(){
 			$.ajax({
 				type:"GET",
@@ -51,6 +51,7 @@ define(["jquery"],function($){
 				}
 			})
 
+
 			$("#se-one").hover(function(){
 				$(".blind").stop().fadeIn(300,function(){
 					$("#sele-one").css("opacity","1");
@@ -60,33 +61,19 @@ define(["jquery"],function($){
 				// $(".blind").stop().fadeOut(300);
 				$(".se-one").css("border-bottom","0");
 				
+			})
+
+			$(".blind").on("mouseover","#tab li",function(){
+				$(".blind").find("#tab li a").css("color","#6c7073")
+				.eq($(this).index()).css("color","#1897f2");
+				$(".blind").find(".se-right #sele-one-r").css("display","none")
+				.eq($(this).index()).css("display","block");
+
+				// $("this").css("color","#1897f2");
 			})
 		})
 	}
 	return {
-		select2:select2
+		tab:tab
 	}
 })
-
-
-/*
-			$("#se-one").hover(function(){
-				$(".blind").stop().fadeIn(300,function(){
-					$("#sele-one").css("opacity","1");
-					$(".se-one").css("border-bottom","1px solid #333");
-				});
-			},function(){
-				// $(".blind").stop().fadeOut(300);
-				$(".se-one").css("border-bottom","0");
-				
-			})
- */
-/*
-
-/*$("#tab").on("mouseover","li",function(){
-				$("#tab").find("a").attr("class","");
-				$(".se-right").find("#sele-one-r").css("display","none")
-				.eq($(this).index()).css("display","block");
-
-				$(this).attr("class","active");
-			})*/

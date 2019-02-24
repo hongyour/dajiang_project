@@ -1,4 +1,4 @@
-define(["jquery","select1","select2","select3"],function($,select1,select2,select3){
+define(["jquery","select1","select2","tab"],function($,select1,select2,tab){
 	function index(){
 		$(function(){
 			
@@ -25,8 +25,10 @@ define(["jquery","select1","select2","select3"],function($,select1,select2,selec
 
 			//第一个li下面获取
 			
-			select2.select2();
-			select3.select3();		
+			// select2.select2();
+			// select3.select3();		
+
+			tab.tab();
 
 		})
 

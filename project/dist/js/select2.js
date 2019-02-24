@@ -81,3 +81,12 @@ define(["jquery"],function($){
 				
 			})
  */
+/*
+
+/*$("#tab").on("mouseover","li",function(){
+				$("#tab").find("a").attr("class","");
+				$(".se-right").find("#sele-one-r").css("display","none")
+				.eq($(this).index()).css("display","block");
+
+				$(this).attr("class","active");
+			})*/

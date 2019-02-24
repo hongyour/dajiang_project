@@ -172,22 +172,13 @@ header #top-header #shopping a:last-child{
 							float: left;
 							margin-top:-4px;
 							color: #6c7073;
+							cursor: pointer;
 							span{
 								display:inline-block;
 								float: right;
 							}
-							&:hover{
-								color:#1897f2;
-								cursor: pointer;
-							};
 						}
 					}
-				}
-			}
-			.se-right1{
-				background-color: #fff;
-				#sele-one-r{
-					background-color: orange;
 				}
 			}
 			.other{
@@ -195,25 +186,28 @@ header #top-header #shopping a:last-child{
 				flex-direction: column;
 			}
 		}
-		/*.blind1{
-			background-color: orange;
-		}*/
-		
 		#sele-one-r{
 			z-index: 3;
-			@include se(absolute,64px);
-			left: 300px;
+			@include se(absolute,2px);
 			width: 1000px;
 			float: right;
 			background-color: #fff;
 			width: 800px;
-			/*display:none;*/
+			display:none;
 			padding-bottom: 30px;
+			.noway{
+				display: flex;
+				.noway1{
+					display: flex;
+					flex-direction: column;
+				}
+			}
 			h2{
 				color: #333;
 				font-size:16px;
 				font-weight: 400;
 				padding-top:20px;
+				height:30px;
 				a{
 					color: #1897f2;
 					font-size: 13px;
@@ -240,47 +234,26 @@ header #top-header #shopping a:last-child{
 					}
 				}
 			}
-			
-		}
-		.se-right{
-			/*position: absolute;*/
-		}
-		#sele-one-b{
-			@extend #sele-one-r;
-			@include se(absolute,240px);
-			/*display:flex;*/
-			justify-content: center;
-		}
-		#sele-one-r1{
-			@extend #sele-one-r;
-			@include se(absolute,480px);
-			left: 400px;
-			width: 60%;
-			display: flex;
-			flex-direction: column;
-			background-color: orange;
-			h2{
-				width: 100%;
+			.div2{
+				dl{
+					width:33%;
+				}
 			}
-			div{
-
-			}
-		}
-		/*#sele-one-r2{
-			@extend #sele-one-r;
-			@extend #sele-one-r1;
-			@include se(absolute,240px);
-			left:400px;
-			width: 40%;
-			margin-left: 80px;
-			div{
+			.div3{
 				dl{
 					width: 50%;
 				}
 			}
 			
-		}*/
-
+		}
+		.se-right{
+			width: 800px;
+			height:567px;
+			position: absolute;
+			overflow: hidden;
+			left: 300px;
+			top:65px;
+		}
 	}
 
 	#sele-last{
@@ -313,6 +286,7 @@ header #top-header #shopping a:last-child{
 	}
 }
 
+/*新增结束*/
 /*nav*/
 nav{
 	width: 100%;
